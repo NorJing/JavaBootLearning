@@ -4,12 +4,12 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
-import org.springframework.data.gemfire.mapping.annotation.Region;
+// import org.springframework.data.gemfire.mapping.annotation.Region;
 
-import lombok.Data;
+// import lombok.Data;
 
-@Data // this Data can give us Getter, Setter, toString...
-@Region("people")
+// @Data // this Data can give us Getter, Setter, toString...
+// @Region("people")
 public class Person {
 
 	private static AtomicLong COUNTER = new AtomicLong(0L);

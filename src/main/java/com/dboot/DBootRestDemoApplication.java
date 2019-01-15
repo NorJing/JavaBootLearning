@@ -1,12 +1,14 @@
 package com.dboot;
 
-import org.apache.geode.cache.client.ClientRegionShortcut;
+// import org.apache.geode.cache.client.ClientRegionShortcut;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+/*
 import org.springframework.data.gemfire.cache.config.EnableGemfireCaching;
 import org.springframework.data.gemfire.config.annotation.ClientCacheApplication;
 import org.springframework.data.gemfire.config.annotation.EnableEntityDefinedRegions;
 import org.springframework.data.gemfire.repository.config.EnableGemfireRepositories;
+*/
 
 /*
 .\mvnw spring-boot:run
@@ -30,13 +32,15 @@ Accept:application/json
 Content-type:application/xml
 */
 
-// for Gemfire
+/* for Gemfire
 @ClientCacheApplication(name = "AccessingGemFireDataRestApplication", logLevel = "error")
 @EnableEntityDefinedRegions(basePackageClasses = Person.class, clientRegionShortcut = ClientRegionShortcut.LOCAL)
 @EnableGemfireRepositories
 @SuppressWarnings("unused")
-
+*/
 // curl -i -X POST -H "Content-Type:application/json" -d "{  \"firstName\" : \"Tommy\", \"lastName\" : \"Frank\" }" http://localhost:8080/people
+
+// JPA is specification. Hibernate is one of implementations
 
 public class DBootRestDemoApplication {
 

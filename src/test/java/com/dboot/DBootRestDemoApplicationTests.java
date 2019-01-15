@@ -11,6 +11,7 @@ public class DBootRestDemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println("I am in DBootRestDemoApplicationTests contextLoads");
 	}
 
 }
